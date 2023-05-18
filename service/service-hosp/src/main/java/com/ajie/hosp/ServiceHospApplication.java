@@ -13,5 +13,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ServiceHospApplication {
     public static void main(String[] args) {
         SpringApplication.run(ServiceHospApplication.class, args);
+        System.out.println("医院设置系统启动成功!");
     }
 }
