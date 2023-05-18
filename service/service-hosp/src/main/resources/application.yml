@@ -1,0 +1,25 @@
+# 服务端口
+server:
+  port: 8201
+
+spring:
+  application:
+    # 服务名称
+    name: service-hosp
+  profiles:
+    # 环境
+    active: dev
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.136.130:3306/registration_hosp?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+  # 返回返回 json 全局时间响应格式
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+# mybatis-plus 日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
